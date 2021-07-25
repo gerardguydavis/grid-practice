@@ -89,19 +89,19 @@
 
   body {
       background-color: #eddfc5;
+      font-family: 'Raleway', sans-serif;
   }
 
   .content-wrapper {
       display: flex;
       justify-content: center;
-      font-family: sans-serif;
   }
 
   h1 {
     writing-mode: vertical-rl;
     text-align: right;
     text-orientation: mixed;
-    font-family: sans-serif;
+    font-family: 'Ramabhadra', sans-serif;
     transform: rotate(180deg);
     margin: 0 0 0 100px;
     z-index: 1;
@@ -146,6 +146,13 @@
       transition: .2s;
   }
 
+  .b span {
+      font-weight: bold;
+      text-decoration: underline;
+      color: crimson;
+      cursor:default;
+  }
+
   .b:hover {
     background-color: lightgreen;
     grid-column-start: 3;
@@ -157,18 +164,32 @@
 
   .b:hover + .c {
       visibility: hidden;
+      grid-row-start: 2;
+      grid-column-start: 5;
   }
     
 
   .c {
-      background: url('../img/omgbird.jpg') center no-repeat;
-      background-size: cover;
+    display: flex;
+  }
+
+  video {
+      width: 100%;
   }
 
   .d {
       background: url('../img/gasp.jpg') center no-repeat;
       background-size: cover;
       grid-column-start: 3;
+      transition: .2s;
+  }
+
+  .secret-image {
+      background: url('../img/squeeze.jpg') center no-repeat;
+      background-size: cover;
+      grid-column-start: 3;
+      grid-row-start: 2;
+      transition: .2s;
   }
 
   .e {
@@ -178,6 +199,8 @@
       scrollbar-width: none;
       padding: 0 15px 10px;
       transition: .2s;
+      grid-column-start: 4;
+      grid-row-start: 2;
   }
 
   .e:hover {
@@ -364,7 +387,7 @@
     html {
         font-size: 16px;
     }
-    
+
       .grid {
           width: 1200px;
           height: 720px;
