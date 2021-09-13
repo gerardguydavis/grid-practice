@@ -136,8 +136,7 @@
   .a:hover {
       grid-column-start: 1;
       grid-column-end: 3;
-      animation-name: slideout-left;
-      animation-duration: .5s;
+      animation: slideout-left .5s;
       background-size: cover;
   }
 
@@ -219,8 +218,7 @@
     background-color: lightgreen;
     grid-column-start: 4;
     grid-column-end: 6;
-    animation-duration: .5s;
-    animation-name: slideout-right;
+    animation: slideout-right .5s;
     transition: .5s;
 }
 
@@ -241,8 +239,7 @@
       background-color: lightgreen;
       grid-column-start: 1;
       grid-column-end: 3;
-      animation-duration: .5s;
-      animation-name: slideout-left;
+      animation: slideout-left .5s;
       transition: .2s;
   }
 
