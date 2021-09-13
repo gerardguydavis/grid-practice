@@ -125,9 +125,7 @@
   }
 
   .a {
-      grid-column-start: 2;
-      grid-row-start: 1;
-      grid-row-end: 3;
+      grid-area: 1 / 2 / 3 / 3;
       background: url('../img/belly.jpg') left no-repeat;
       background-size: cover;
       animation: collapse-right .5s;
@@ -135,13 +133,12 @@
 
   .a:hover {
       grid-column-start: 1;
-      grid-column-end: 3;
       animation: slideout-left .5s;
       background-size: cover;
   }
 
   .b {
-      grid-column-start: 3;
+      grid-area: 1 / 3 / 2 / 4;
       background-color: greenyellow;
       overflow-y: scroll;
       -ms-overflow-style: none;
@@ -161,22 +158,19 @@
   }
 
   .b:hover {
-    background-color: lightgreen;
-    grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-end: 2;
+    background-color: lightgreen;
     animation: slideout-right .5s;
 }
 
   .b:hover + .c {
-      grid-row-start: 1;
-      grid-column-start: 5;
-      grid-row-end: 2;
+      grid-area: 1 / 5 / 2 / 6;
       margin-left: -200%;
   }
     
 
   .c {
+    grid-area: 1 / 4 / 2 / 5;
     display: flex;
     z-index: 0;
     min-width: 0;
@@ -188,21 +182,21 @@
   }
 
   .d {
+      grid-area: 2 / 3 / 3 / 4;
       background: url('../img/gasp.jpg') center no-repeat;
       background-size: cover;
-      grid-column-start: 3;
       transition: .2s;
   }
 
   .secret-image {
+      grid-area: 2 / 3 / 3 / 4;
       background: url('../img/squeeze.jpg') center no-repeat;
       background-size: cover;
-      grid-column-start: 3;
-      grid-row-start: 2;
       transition: .2s;
   }
 
   .e {
+      grid-area: 2 / 4 / 3 / 5;
       background-color: greenyellow;
       overflow-y: scroll;
       -ms-overflow-style: none;
@@ -215,14 +209,14 @@
   }
 
   .e:hover {
-    background-color: lightgreen;
-    grid-column-start: 4;
     grid-column-end: 6;
+    background-color: lightgreen;
     animation: slideout-right .5s;
     transition: .5s;
 }
 
   .f {
+      grid-area: 3 / 2 / 4 / 3;
       background-color: greenyellow;
       overflow-y: scroll;
       -ms-overflow-style: none;
@@ -236,18 +230,17 @@
   }
 
   .f:hover {
-      background-color: lightgreen;
+    
       grid-column-start: 1;
-      grid-column-end: 3;
+      background-color: lightgreen;
       animation: slideout-left .5s;
       transition: .2s;
   }
 
   .g {
+      grid-area: 3 / 3 / 4 / 5;
       background: url('../img/nap.jpg') top no-repeat;
       background-size: cover;
-      grid-column-start: 3;
-      grid-column-end: 5;
   }
 
   
